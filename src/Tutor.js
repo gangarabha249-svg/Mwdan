@@ -61,7 +61,7 @@ export default function Tutor() {
 
     try {
       // Initialize Google AI with the variable name matching Vercel
-      const genAI = new GoogleGenerativeAI(process.env.REACT_APP_GEMINI_API_KEY);
+     const genAI = new GoogleGenerativeAI("AQ.Ab8RN6KykpM6NwLQXxiWukgATyFqBn45_bvJpNBLKgLkTStW1Q");
       const model = genAI.getGenerativeModel({ model: "gemini-1.5-flash" });
 
       const chat = model.startChat({
