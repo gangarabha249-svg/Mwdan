@@ -65,8 +65,7 @@ export default function Tutor() {
   const [loading, setLoading] = useState(false);
   const [started, setStarted] = useState(false);
   const bottomRef = useRef(null);
-  const API_KEY = process.env.REACT_APP_GEMINI_KEY;
-
+  const API_KEY = process.env.REACT_APP_GEMINI_API_KEY;
   useEffect(() => { bottomRef.current?.scrollIntoView({ behavior: "smooth" }); }, [messages, loading]);
 
   async function callGemini(msgs) {
